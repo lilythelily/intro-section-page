@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: lightgray;
+        margin-bottom: 24px;
+      }
+      .attribution a {
+        color: hsl(227, 22%, 43%);
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="desktop-header">
+      <!-- features -->
+      <img src="images/logo.svg" id="logo" alt="logo" width="84" height="27" />
+      <div class="nav-menu">
+        <ul class="menu">
+          <li class="dropdown">
+            <div class="title-arrow">
+              Features
+              <img
+                src="images/icon-arrow-down.svg"
+                alt="arrow-down"
+                id="arrow1"
+                width="10"
+                height="6"
+              />
+            </div>
+
+            <!-- popup1 -->
+            <ul class="popup1">
+              <li class="to-do">
+                <img src="images/icon-todo.svg" alt="note" />To do List
+              </li>
+              <li class="to-do">
+                <img src="images/icon-calendar.svg" alt="calendar" />Calendar
+              </li>
+              <li class="to-do">
+                <img src="images/icon-reminders.svg" alt="bell" />Reminders
+              </li>
+              <li class="to-do">
+                <img src="images/icon-planning.svg" alt="clock" />Planning
+              </li>
+            </ul>
+          </li>
+
+          <!-- company -->
+          <li class="dropdown2">
+            <div class="title-arrow">
+              Company<img
+                src="images/icon-arrow-down.svg"
+                alt="arrow-down"
+                id="arrow2"
+                width="10"
+                height="6"
+              />
+            </div>
+
+            <!-- popup2 -->
+            <ul class="popup2">
+              <li class="company">History</li>
+              <li class="company">Our Team</li>
+              <li class="company">Blog</li>
+            </ul>
+          </li>
+          <!-- careers about -->
+          <li>Careers</li>
+          <li class="cursor">About</li>
+        </ul>
+
+        <!-- login register -->
+        <ul class="login">
+          <li class="cursor">Login</li>
+          <li class="outline">Register</li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- mobile header -->
+    <header class="mobile-header">
+      <img src="images/logo.svg" id="logo" alt="logo" width="84" height="27" />
+      <img src="images/icon-menu.svg" alt="menu" class="hamburger"/>
+    </header>
+
+    <!-- mobile side panel -->
+
+    <div class="side-panel">
+    <img src="images/icon-close-menu.svg" alt="close" class="close" />
+      <ul class="mobile-menu">
+        <li class="mobile-dropdown">
+          <div class="title-arrow">
+            Features
+            <img
+              src="images/icon-arrow-down.svg"
+              alt="arrow-down"
+              id="arrow3"
+              width="10"
+              height="6"
+            /></div>
+            <p class="mobile-todo"></p>
+        </li>
+
+        <!-- company -->
+        <li class="mobile-dropdown2">
+          <div class="title-arrow">
+            Company<img
+              src="images/icon-arrow-down.svg"
+              alt="arrow-down"
+              id="arrow4"
+              width="10"
+              height="6"
+            />
+          </div>
+          <p class="mobile-company">
+        </li>
+        <!-- careers about -->
+        <li>Careers</li>
+        <li class="cursor">About</li>
+
+      <!-- login register -->
+       <div class="mobile-login">
+        <li class="cursor">Login</li>
+        <li class="mobile-outline">Register</li></div>
+  </div>
+
+<div class="overlay"></div>
+
+    <!-- main body -->
+    <main>
+
+      <div class="mobile-image"></div>
+      <section>
+        <h1>Make remote work</h1>
+
+        <article>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </article>
+
+        <button>Learn more</button>
+
+        <div class="clients">
+          <img class="brand"src="images/client-databiz.svg" alt="brand" width="90"/>
+          <img class="brand"src="images/client-audiophile.svg" alt="brand" width="90"/>
+          <img class="brand"src="images/client-meet.svg" alt="brand" width="90"/>
+          <img class="brand"src="images/client-maker.svg" alt="brand" width="90"/>
+        </div>
+      </section>
+
+      <div class="image"></div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by KA.
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
