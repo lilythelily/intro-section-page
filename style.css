@@ -125,6 +125,7 @@ button {
   width: 10rem;
   padding: 1rem 1.5rem;
   border-radius: 0.875rem;
+  border: 0.0625rem solid transparent;
 }
 
 button:hover {
