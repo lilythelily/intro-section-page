@@ -1,7 +1,7 @@
 "use strict";
 
-const drop1 = document.querySelector(".dropdown");
-const drop2 = document.querySelector(".dropdown2");
+const title1 = document.querySelector("#title1");
+const title2 = document.querySelector("#title2");
 const arrow1 = document.querySelector("#arrow1");
 const arrow2 = document.querySelector("#arrow2");
 const moreBtn = document.querySelector("button");
@@ -16,22 +16,22 @@ function reset(popup) {
   popup.style.opacity = "0";
 }
 
-drop1.addEventListener("mouseenter", (e) => {
+title1.addEventListener("mouseenter", (e) => {
   showPopup(popup1);
   arrow1.src = "images/icon-black-arrow-up.svg";
 });
 
-drop1.addEventListener("mouseleave", (e) => {
+title1.addEventListener("mouseleave", (e) => {
   reset(popup1);
   arrow1.src = "images/icon-black-arrow-down.svg";
 });
 
-drop2.addEventListener("mouseenter", (e) => {
+title2.addEventListener("mouseenter", (e) => {
   showPopup(popup2);
   arrow2.src = "images/icon-black-arrow-up.svg";
 });
 
-drop2.addEventListener("mouseleave", (e) => {
+title2.addEventListener("mouseleave", (e) => {
   reset(popup2);
   arrow2.src = "images/icon-black-arrow-down.svg";
 });
